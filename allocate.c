@@ -20,8 +20,8 @@ int main()
 	// Get the number of elements for the array
 	n = 0;
 	pid_t yo = getpid();
-	printf("voici mon PID:%ld et celui de mon père est :%ld\n", yo,getppid());
-	printf("Enter number of elements: %d\n", n);
+	printf("voici mon PID:%d et celui de mon père est :%d\n", yo,getppid());
+	printf("Enter number of elements: %ld\n", n);
 
 	// Dynamically allocate memory using malloc()
 //	long int j=0;
@@ -31,7 +31,7 @@ int main()
 	{
 		
 			ptr = (int*)malloc(n);
-			printf("Mémoires demandée : %dbytes\n", n);
+			printf("Mémoires demandée : %ldbytes\n", n);
 			get_metrics(yo);
 			sleep(60);
 
